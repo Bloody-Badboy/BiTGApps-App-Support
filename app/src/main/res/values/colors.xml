@@ -4,4 +4,27 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="semitrans">#4000</color>
+
+    <color name="blue_200">#90CAF9</color> <!-- colorPrimary in Dark mode-->
+    <color name="blue_300">#64B5F6</color> <!-- colorPrimaryDark in Dark mode-->
+    <color name="blue_500">#2196F3</color>  <!-- colorPrimary in Light mode-->
+    <color name="blue_700">#1976D2</color> <!-- colorPrimaryDark in Light mode-->
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="transparent">#0fff</color>
+
+
+    <color name="color_primary">@color/blue_500</color>
+    <color name="color_primary_dark">@color/blue_700</color>
+    <color name="color_on_secondary">@color/white</color>
+
+    <color name="color_control_light">#39000000</color> <!-- Same as textColorPrimary disabled -->
+
+    <!-- Scrim colors -->
+    <color name="system_ui_scrim_light">#B3FFFFFF</color> <!-- 70% white -->
+    <color name="system_ui_scrim_black">#40000000</color> <!-- 25% black -->
+
+    <color name="status_bar_scrim">@color/system_ui_scrim_black</color>
+    <color name="nav_bar_scrim">@color/system_ui_scrim_black</color>
 </resources>

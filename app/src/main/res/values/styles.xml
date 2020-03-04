@@ -1,17 +1,31 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <!-- Widget styles -->
+    <style name="Widget.BiTGApps" parent="@android:style/Widget.Material" />
+
+
+    <style name="Widget.BiTGApps.AppBar" parent="@style/Widget.Design.AppBarLayout">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">8dp</item>
     </style>
 
-    <style name="AppTheme.NoActionBar" parent="AppTheme">
-    <item name="windowActionBar">false</item>
-    <item name="windowNoTitle">true</item>
-</style>
+    <style name="Widget.BiTGApps.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:paddingEnd">8dp</item>
+        <item name="popupTheme">@style/AppTheme.PopupTheme</item>
+        <item name="titleTextAppearance">@style/TextAppearance.BiTGApps.ToolbarTitle</item>
+    </style>
+
+    <!-- Text Appearance -->
+    <style name="TextAppearance.BiTGApps.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize" tools:ignore="SpUsage">20dp</item>
+    </style>
+
+    <style name="Widget.AppBar" parent="@style/Widget.Design.AppBarLayout">
+        <item name="popupTheme">@style/AppTheme.PopupTheme</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
 
     <style name="DividerText">
         <item name="android:textColor">?colorPrimary</item>
@@ -23,8 +37,5 @@
         <item name="android:paddingBottom">10dp</item>
     </style>
 
-    <style name="AppTheme.Transparent" parent="@style/AppTheme.NoActionBar">
-        <item name="android:statusBarColor">@color/semitrans</item>
-    </style>
 
 </resources>
